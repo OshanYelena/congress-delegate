@@ -1,0 +1,150 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  font-family: "Hachi Maru Pop", cursive;
+  display: flex;
+  padding: 15px;
+}
+.App .Meta {
+  flex-grow: 1;
+  padding-right: 15px;
+}
+.App .Meta input {
+  font-family: inherit;
+  padding: 5px;
+  width: 100%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.25);
+  border: 2px solid rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+.App .Meta button {
+  padding: 10px 15px;
+  border: 2px solid #87ceeb;
+  background-color: #33f3fb;
+  font-family: inherit;
+  margin: 20px 0;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.App #downloadWrapper {
+  padding: 20px;
+}
+.App #certificateWrapper {
+  box-shadow: 0 0 5px #000;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.App #certificateWrapper img {
+  display: block;
+}
+.App #certificateWrapper .wrapperName {
+  position: absolute;
+  z-index: 10000;
+  top: 550px;
+  width: 100%;
+  height: 40px;
+}
+.App #certificateWrapper p {
+  text-transform: uppercase !important;
+  text-align: center;
+  font-family: "inter";
+  font-weight: 300 !important;
+  color: white;
+  margin: 0;
+  font-size: 40pt;
+}
+
+.pic-container {
+  cursor: pointer;
+  overflow: hidden;
+  margin: 0;
+  position: absolute;
+  z-index: 10000;
+  left: 40%;
+  top: 300px;
+  font-size: 40pt;
+}
+
+.pic {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.pic-container.pic-xs {
+  width: 50px;
+  height: 50px;
+}
+
+.pic-container.pic-small {
+  width: 70px;
+  height: 70px;
+}
+
+.pic-container.pic-medium {
+  width: 200px;
+  height: 200px;
+}
+
+.pic-container.pic-large {
+  width: 250px;
+  height: 250px;
+}
+
+.pic-container.pic-xl {
+  width: 350px;
+  height: 350px;
+}
+
+.pic-container.pic-circle {
+  border-radius: 50%;
+  border: silver 3px solid;
+}
+
+.pic-overlay {
+  background-color: #ccc;
+  opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pic-container:hover .pic-overlay {
+  top: -100%;
+}
+
+.pic-overlay a {
+  display: block;
+  padding: 10px;
+}
+
+.pic-xs .pic-overlay a {
+  padding: 5px;
+}
+
+.pic-overlay .fa-window-close-o {
+  color: red;
+}
+
+.pic-overlay .fa-pencil-square-o {
+  color: blue;
+}
+
+.pic-medium .pic-overlay a i {
+  font-size: 20px;
+}
+
+.pic-large .pic-overlay a i {
+  font-size: 35px;
+}
+
+.pic-xl .pic-overlay a i {
+  font-size: 45px;
+}
